@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/kjua@0.6.0/dist/kjua.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/mainPanel.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.7.0/mammoth.browser.min.js"></script>
+</head>
+<body>
+    <div class="main-panel-container">
+        <button id="uploadBtn">Upload File</button>
+
+        <label class="fileInput" for="fileInput">Choose a file to upload:</label>
+        <input class="fileInput" type="file" id="fileInput" accept=".txt,.docx" title="Select a text or Word document to upload" />
+        
+        <button id="scanBtn">Start Scanning</button>
+    </div>
+    <script src="javascript/mainPanel.js"></script>
+</body>
+</html>
