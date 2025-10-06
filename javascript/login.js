@@ -10,8 +10,9 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     if (username === adminUsername && password === adminPassword) {
         // Redirect to admin dashboard
-        window.location.href = 'admin_dashboard.html';
+        window.location.href = 'mainPanel.html';
     } else {
         document.getElementById('error-message').innerHTML = 'Invalid credentials. Please try again.';
     }
+
 });
