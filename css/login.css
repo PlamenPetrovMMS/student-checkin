@@ -1,11 +1,3 @@
-@media (max-width: 500px) {
-    .login-container {
-        max-width: 95vw;
-        padding: 18px 8px;
-        font-size: 1em;
-    }
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@400&display=swap');
 
 html, body {
@@ -93,4 +85,5 @@ body {
     font-family: 'Rowdies', Arial, sans-serif;
     font-weight: 400;
 }
+
 
