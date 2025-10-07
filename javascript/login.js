@@ -1,9 +1,15 @@
-
 const adminUsername = "admin";
 const adminPassword = "Admin-Pass123!";
 
 document.addEventListener('DOMContentLoaded', function() {
     localStorage.removeItem('loggedIn');
+});
+
+document.getElementById('username').addEventListener('click', function() {
+    document.getElementById('error-message').style.display = 'none';
+});
+document.getElementById('password').addEventListener('click', function() {
+    document.getElementById('error-message').style.display = 'none';
 });
 
 document.getElementById('loginForm').addEventListener('submit', function(event) {
@@ -17,6 +23,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         // Redirect to admin dashboard
         window.location.href = 'mainPanel.html';
     } else {
+        document.getElementById('error-message').style.display = 'block';
         document.getElementById('error-message').innerHTML = 'Invalid credentials. Please try again.';
     }
 });
