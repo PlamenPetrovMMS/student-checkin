@@ -50,7 +50,7 @@
 }
 .radio-buttons-container input[type="radio"] {
     accent-color: #000000;
-    transform: scale(2);
+    transform: scale(1.7);
 }
 .radio-buttons-container input[type="radio"]:checked + label {
     font-weight: bold;
@@ -92,3 +92,4 @@ body {
     text-align:center;
     margin-top:30px;
 }
+
