@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // const CHECK_IN_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyz7RYoBxvu8-x7ZoxEhOpLTALjWydaK2bNPBCXecQF8WY-f3KZ5pW4J0RHQptHilBrNg/exec';
     const CHECK_IN_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzO4VmW7AByNGZoxP7QNbXStdf_Apzr5ruOPZf_Smhage7jQV4p8Mq0NBArVh9DP-po-g/exec';
 
-    // const CHECK_OUT_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyf70mKCmo47tYLw2DNny9yAg8_-D8CO-fS5L53rMSFrfWcH4D88wmm-gL8nYmV_uyi_A/exec';
+    // const CHECK_OUT_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyf70mKCmo47tYLw2DNny9yAg8_PproektNaPlamenPetrov-D8CO-fS5L53rMSFrfWcH4D88wmm-gL8nYmV_uyi_A/exec';
     const CHECK_OUT_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw5iruEIXcEYnCNUuFS_LwP9DgrV7C_3esXoAbaXNEv98OkJkURk1yBM5wMiSgtxUXa8g/exec';
 
     async function clearTables(attendanceType) {
@@ -403,3 +403,4 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'scanningPage.html';
     });
 });
+
