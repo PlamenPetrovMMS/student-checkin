@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@400&display=swap');
+
+
+
+@media (max-width: 700px) {
+    body{
+        max-width: 100vw;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-panel-layout {
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto !important;
+        max-width: 100vw !important;
+        width: 100% !important;
+        position:  relative !important;
+    }
+    .main-panel-left,
+    .main-panel-middle,
+    .main-panel-right {
+        max-width: 100vw !important;
+        width: 100% !important;
+    }
+    .main-panel-left,
+    .main-panel-middle,
+    .main-panel-right {
+        min-width: unset;
+        width: 100vw;
+        border: none;
+        box-sizing: border-box;
+    }
+    .main-panel-left {
+        border-bottom: 1px solid #ddd;
+        margin-top: 0;
+        order: 2;
+    }
+    .main-panel-middle {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-bottom: 0 !important;
+        order: 2 !important;
+    }
+    .main-panel-right {
+        border-top: 1px solid #ddd;
+        order: 3;
+    }
+    #uploadBtn, #scanBtn {
+        width: 100%;
+        height: 48px;
+        font-size: 15px;
+        margin-bottom: 14px;
+    }
+}
+.main-panel-layout {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+        font-family: 'Rowdies', Arial, sans-serif;
+        font-weight: 400;
+}
+
+
+.main-panel-left {
+    flex: 1;
+    background: #000;
+    color: #fff;
+    padding: 32px 24px;
+    border-right: 2px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 220px;
+        font-family: 'Rowdies', Arial, sans-serif;
+        font-weight: 200;
+}
+
+.main-panel-left h2 {
+    font-size: 2em;
+}
+
+.instructions-example-student{
+    font-size: 1.2em;
+    
+}
+
+.instructions-steps{
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+.main-panel-middle {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+    min-width: 320px;
+        font-family: 'Rowdies', Arial, sans-serif;
+        font-weight: 400;
+}
+
+.main-panel-right {
+    flex: 1;
+    background: #000;
+    color: #fff;
+    padding: 32px 24px;
+    border-left: 2px solid #ddd;
+    min-width: 220px;
+        font-family: 'Rowdies', Arial, sans-serif;
+        font-weight: 400;
+}
+
+
+
+#uploadBtn, #scanBtn, #downloadTablesBtn, #clearTablesBtn {
+    padding: 12px 24px;
+    font-size: 20px;
+    width: 320px;
+    height: 70px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #222;
+    color: #fff;
+    border: 3px solid #000;
+    border-radius: 10px;
+        font-weight: 400;
+        font-family: 'Rowdies', Arial, sans-serif;
+    transition: background 0.2s, color 0.2s;
+    margin-bottom: 18px;
+}
+
+#downloadTablesBtn{
+    background-color: rgb(26, 174, 18);
+}
+
+#clearTablesBtn{
+    background-color: rgb(222, 39, 39);
+}
+
+#uploadBtn:hover, #scanBtn:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+#downloadTablesBtn:hover {
+    background-color: rgb(16, 133, 9);
+    color: #fff;
+}
+
+#clearTablesBtn:hover {
+    background-color: rgb(147, 8, 8);
+    color: #fff;
+}
+
+#uploadBtn {
+    margin-bottom: 20px;
+}
+
+
+.fileInput {
+    display: none;
+}
+
