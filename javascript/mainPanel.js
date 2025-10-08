@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.appendChild(a2);
             a2.click();
             document.body.removeChild(a2);
-        }, 1000); // Small delay to download both files sequentially
+        }, 2000); // Small delay to download both files sequentially
         
     });
 
@@ -394,3 +394,4 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'scanningPage.html';
     });
 });
+
