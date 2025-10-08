@@ -123,9 +123,17 @@
         font-weight: 400;
 }
 
+.table-actions-row{
+    margin-top: 50px;
+    text-align: center;
+}
+.table-actions-row span{
+    font-size: 1.5em;
+    margin-bottom: 8px;
+    display: inline-block;
+}
 
-
-#uploadBtn, #scanBtn, #downloadTablesBtn, #clearTablesBtn {
+#uploadBtn, #scanBtn, #downloadCheckInBtn, #downloadCheckOutBtn, #clearCheckInBtn, #clearCheckOutBtn {
     padding: 12px 24px;
     font-size: 20px;
     width: 320px;
@@ -142,11 +150,15 @@
     margin-bottom: 18px;
 }
 
-#downloadTablesBtn{
+#downloadCheckOutBtn, #downloadCheckInBtn{
+    width: 200px;
+    height: 70px;
     background-color: rgb(26, 174, 18);
 }
 
-#clearTablesBtn{
+#clearCheckInBtn, #clearCheckOutBtn{
+    width: 100px;
+    height: 70px;
     background-color: rgb(222, 39, 39);
 }
 
@@ -155,12 +167,12 @@
     color: #fff;
 }
 
-#downloadTablesBtn:hover {
+#downloadCheckOutBtn:hover, #downloadCheckInBtn:hover{
     background-color: rgb(16, 133, 9);
     color: #fff;
 }
 
-#clearTablesBtn:hover {
+#clearCheckInBtn:hover, #clearCheckOutBtn:hover {
     background-color: rgb(147, 8, 8);
     color: #fff;
 }
