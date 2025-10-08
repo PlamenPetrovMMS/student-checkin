@@ -18,30 +18,34 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    const downloadTablesBtn = document.getElementById('downloadTablesBtn');
-    downloadTablesBtn.addEventListener('click', function() {
+    const downloadCheckInBtn = document.getElementById('downloadCheckInBtn');
+    const downloadCheckOutBtn = document.getElementById('downloadCheckOutBtn');
+    downloadCheckInBtn.addEventListener('click', function() {
         // Replace with your actual Google Sheet ID
         const checkinSheetId = '19oVNO93U2c8wNkbVeTsUOTh4XnbTb6zAD0siOTe1npE';
-        const checkoutSheetId = '1nARCKzvw08yDv6t9S3JnAAvLnEkDqWcOerjXjmkk4j8';
         const url1 = `https://docs.google.com/spreadsheets/d/${checkinSheetId}/export?format=xlsx`;
-        const url2 = `https://docs.google.com/spreadsheets/d/${checkoutSheetId}/export?format=xlsx`;
         const a1 = document.createElement('a');
         a1.href = url1;
         a1.download = 'Students_Check-In.xlsx';
         document.body.appendChild(a1);
         a1.click();
-        document.body.removeChild(a1);
-
-        setTimeout(() => {
-            const a2 = document.createElement('a');
-            a2.href = url2;
-            a2.download = 'Students_Check-Out.xlsx';
-            document.body.appendChild(a2);
-            a2.click();
-            document.body.removeChild(a2);
-        }, 2000); // Small delay to download both files sequentially
-        
+        document.body.removeChild(a1); 
     });
+    downloadCheckOutBtn.addEventListener('click', function() {
+        // Replace with your actual Google Sheet ID
+        const checkoutSheetId = '1nARCKzvw08yDv6t9S3JnAAvLnEkDqWcOerjXjmkk4j8';
+        const url2 = `https://docs.google.com/spreadsheets/d/${checkoutSheetId}/export?format=xlsx`;
+        const a2 = document.createElement('a');
+        a2.href = url2;
+        a2.download = 'Students_Check-Out.xlsx';
+        document.body.appendChild(a2);
+        a2.click();
+        document.body.removeChild(a2);
+    });
+    
+
+        
+    
 
     // const CHECK_IN_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyz7RYoBxvu8-x7ZoxEhOpLTALjWydaK2bNPBCXecQF8WY-f3KZ5pW4J0RHQptHilBrNg/exec';
     const CHECK_IN_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzO4VmW7AByNGZoxP7QNbXStdf_Apzr5ruOPZf_Smhage7jQV4p8Mq0NBArVh9DP-po-g/exec';
@@ -76,10 +80,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    const clearTablesBtn = document.getElementById('clearTablesBtn');
-    clearTablesBtn.addEventListener('click', function() {
-        if (confirm('Are you sure you want to clear all data from both sheets? This action cannot be undone.')) {
+    const clearCheckInBtn = document.getElementById('clearCheckInBtn');
+    const clearCheckOutBtn = document.getElementById('clearCheckOutBtn');
+    clearCheckInBtn.addEventListener('click', function() {
+        if (confirm('Are you sure you want to clear all data from the Check-In sheet? This action cannot be undone.')) {
             clearTables('joining');
+        }
+    });
+    clearCheckOutBtn.addEventListener('click', function() {
+        if (confirm('Are you sure you want to clear all data from the Check-Out sheet? This action cannot be undone.')) {
             clearTables('leaving');
         }
     });
@@ -394,4 +403,3 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'scanningPage.html';
     });
 });
-
