@@ -30,8 +30,16 @@
             <button id="uploadBtn">Upload File</button>
             <input class="fileInput" type="file" id="fileInput" accept=".txt,.docx,.odt" title="Select a text or Word document to upload" />
             <button id="scanBtn">Start Scanning</button>
-            <button id="downloadTablesBtn">Download Tables</button>
-            <button id="clearTablesBtn">Clear Tables</button>
+
+            <div class="table-actions-row">
+                <span class="table-label">Check-In Table</span><br>
+                <button id="downloadCheckInBtn">Download</button>
+                <button id="clearCheckInBtn">Clear</button><br>
+            
+                <span class="table-label">Check-Out Table</span><br>
+                <button id="downloadCheckOutBtn">Download</button>
+                <button id="clearCheckOutBtn">Clear</button>
+            </div>
         </div>
         <div class="main-panel-right">
             <!-- Add extra space for future features, logs, or other necessary info -->
